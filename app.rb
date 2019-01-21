@@ -10,3 +10,6 @@ require_relative 'lib/event'
 
 # Open bar pour tester ton application. Tous les fichiers importants sont chargés
 # Tu peux faire User.new, Event.new, binding.pry, User.all, etc etc
+
+
+
