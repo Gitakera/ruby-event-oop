@@ -18,20 +18,16 @@ class User
     return all
   end
   
-  def self.descendants
-    return ObjectSpace.each_object(Class).select { |klass| klass < self }
+  def show_my_mail
+   return @email  
   end
-	
-
 
   def self.count
-    puts @@save_self
-    puts @@save_self["maila"]
     return @@user_count
   end
 
   def self.find_by_email(email)
-    
+     return @@save_self[email]
    
   end
 
@@ -44,8 +40,9 @@ end
    
 pupu=User.new("maila")
 poipoi=User.new("nono")  
-	
+	poi=User.new("aaaaaaaa") 
 puts User.count
-puts User.descendants
+puts User.find_by_email("maila").show_my_mail
+
 
 
