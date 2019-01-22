@@ -9,7 +9,7 @@ class Event
     @length=len
     @title=tit
     @attendees=att
-    puts "objet cree : #{sta}, #{len}, #{tit}, #{att}"
+    #puts "objet cree : #{sta}, #{len}, #{tit}, #{att}"
   end
 
   def self.all
@@ -39,9 +39,8 @@ class Event
     puts"Durée : #{length} minutes"
     print "Invités : "
     @attendees.each { |w| print "#{w} "}
+    puts ""
   end
 end
 
-envenement= Event.new("2019-01-13 09:00", 10, "standup quotidien", ["truc@machin.com", "bidule@chose.fr"])
 
-envenement.to_s

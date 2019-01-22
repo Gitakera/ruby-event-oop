@@ -11,7 +11,7 @@ class User
     @@save_self.store(email_to_save,self)
     @@user_count = @@user_count + 1
     
-    puts "objet cree #{email_to_save}"
+    #puts "objet cree #{email_to_save}"
   end
 
   def self.all
@@ -38,11 +38,7 @@ class User
 end
  
    
-pupu=User.new("maila")
-poipoi=User.new("nono")  
-	poi=User.new("aaaaaaaa") 
-puts User.count
-puts User.find_by_email("maila").show_my_mail
+
 
 
 
